@@ -45,17 +45,17 @@
     menu {
         display: flex;
         flex-flow: row nowrap;
-
     }
-    
+
     menu > ul {
         display: flex;
         flex-flow: row nowrap;
     }
+
     menu > ul > li > a {
         font-size: 1.4em;
-        padding: 10px;
-    
+        padding: 14px;
+        margin: 5px 5px;
     }
 
     /* DROPDOWN MENU*/
