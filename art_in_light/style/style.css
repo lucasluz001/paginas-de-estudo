@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VARIÁVEIS DE COR E DE FONTE */
+:root {
+    --color01:#00747C;
+    --color02:#00BBC9;
+    --color03:#CACACA;
+    --color04:#878787;
+    --color05:#202022;
+    --font-name: "Monsieur La Doulaise", serif;
+    --font-head: "Cinzel", serif;
+    --font-menu: "Noto Serif", serif;
+    --font-text: "Noto Sans", sans-serif;
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* CABEÇALHO */
+header {
+    display: block;
+}
+
+header img {
+    display: block;
+    width: 100%;
+}
+
+/* CORPO DO MENU */
+nav {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--color03);
+    text-align: center;
+}
+
+nav > a {
+    display: block;
+    background-color: var(--color04);
+    color: white;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 3px 0px;
+    padding: 10px;
+    
+}
+
+
+/* MENU */
+menu {
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+
+menu#itens > a:hover {
+    background-color: var(--color05);
+}
+
+menu > ul {
+    list-style-type: none;
+    
+}
+
+menu > ul > li > a {
+    display: block;
+    background-color: var(--color04);
+    padding: 10px;
+    margin-bottom: 3px;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+menu > ul > li > a:hover {
+    background-color: var(--color05);
+}
+
+menu > ul > li > ul {
+    list-style-type: none;
+   
+}
+
+menu > ul > li > ul > li {
+    list-style-type: none;
+}
+
+menu > ul > li > ul > li > a {
+    display: block;
+    background-color: var(--color03);
+    padding: 10px;
+    margin-bottom: 3px; 
+    color: black;
+    text-decoration: none;
+
+}
+
+menu > ul > li > ul > li > a:hover {
+    background-color: var(--color04);
+    color: white;
+}
+
+.menu-direita > ul {
+    list-style-type: none;
+}
+
+.menu-direita > ul > li > a {
+    display: block;
+    background-color: var(--color04);
+    padding: 10px;
+    margin-bottom: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+div.menu-direita > ul > li > a:hover {
+    background-color: var(--color05);
+}
+/* DROPDOWN MENU*/
+
+menu > ul > li > ul {
+    display: none;
+}
+
+menu > ul > li:hover > ul{
+    display: block;
+    background-color: #878787;
+}
+
+menu > ul > li > ul > li > a {
+    display: block;
+}
+/* CORPO */
+
+main {
+    display: block;
+    margin: auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.quadros {
+    width: 100%;
+}
+
+.quadros > img {
+    margin: auto;
+    width: 100%;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: var(--color02);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+}
+
+footer h3 {
+    font-family: var(--font-head);
+    font-size: 1.5em;
+}
+
+footer p {
+    font-family: var(--font-text);
+}
+
+.redes {
+    margin-bottom: 20px;
+}
+
+.redes > ul > li {
+    list-style-type: none;
+}
+
+.redes > ul > li > a {
+    
+    font-family: var(--font-text);
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.redes > ul > li > a:hover {
+    text-decoration: underline;
+} 
+
+.ajuda {
+    margin-bottom: 20px;
+}
+
+.ajuda > a {
+    display: block;
+    font-family: var(--font-text);
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+
+.ajuda > a:hover {
+    text-decoration: underline;
+}
+
+.localizacao > p {
+    margin-bottom: 10px;
+}
