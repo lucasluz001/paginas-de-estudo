@@ -1,3 +1,6 @@
+var menu = window.document.getElementByClass('itens')
+menu.addEventListener('click', clickMenu)
+
 function clickMenu(){
     if (itens.style.display == 'block'){
         itens.style.display = 'none'

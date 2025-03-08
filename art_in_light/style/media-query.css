@@ -1,4 +1,4 @@
-@charset "UTF-*";
+@charset "UTF-8";
 
 /* VARIÁVEIS DE COR E DE FONTE */
 :root {
@@ -85,7 +85,7 @@
     }
 
     .menu-direita > ul > li > a > i{
-        font-size: 2em;
+        font-size: 1.9em;
     }
 
     .menu-direita > ul > li > ul > li{
