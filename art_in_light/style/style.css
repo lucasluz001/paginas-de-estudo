@@ -33,14 +33,6 @@ body{
     
 }
 /* CABEÇALHO */
-header {
-    display: block;
-}
-
-header img {
-    display: block;
-    width: 100%;
-}
 
 /* CORPO DO MENU */
 nav {
@@ -161,14 +153,23 @@ article {
     flex-direction: column;
 }
 
-.quadros {
+.galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.galeria > .quadros {
+   flex: 1 1 400px;
+   margin: 10px;
+}
+.quadros img{
     width: 100%;
 }
 
-.quadros > img {
-    margin: auto;
-    width: 100%;
-}
+
 
 /* RODAPÉ */
 footer {
