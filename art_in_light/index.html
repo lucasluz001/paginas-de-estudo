@@ -8,13 +8,16 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/media-query.css">
+    
 </head>
-<body>
-    <script src="script/script.js"></script>
+<body onresize="mudouTamanho()">
+    <script defer src="script/script.js"></script>
     <header>
         <nav>
-            <a href="#" >Art on Light</a>
+            <a href="#" class="logo">Art on Light</a>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+                menu
+                </span>
             <menu id="itens" >
                     <ul>
                         <li><a href="#">Artistas</a></li>
@@ -30,13 +33,13 @@
                     </ul>
             </menu>
         
-            <div class="menu-direita">
+            <menu id="itens2" class="menu-direita">
                 <ul>
                     <li><a href="#"><i class="material-symbols-outlined">search</i></a></li>
                     <li><a href="#"><i class="material-symbols-outlined">account_circle</i></a></li>
                     <li><a href="#"><i class="material-symbols-outlined">shopping_cart</i></a></li>
                 </ul>
-            </div>
+            </menu>
         </nav>
     </header>
     <main>

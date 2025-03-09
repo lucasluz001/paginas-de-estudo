@@ -42,24 +42,34 @@ nav {
     text-align: center;
 }
 
-nav > a {
+nav > .logo {
     display: block;
     background-color: var(--color04);
     color: white;
     text-decoration: none;
     font-family:'Times New Roman', Times, serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold;
-    margin: 3px 0px;
+    margin-bottom: 3px;
     padding: 10px;
     
 }
 
+span#burguer {
+    background-color: var(--color04);
+    padding: 7px;
+    color: white;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
 
 /* MENU */
 menu {
-    display: flex;
-    flex-flow: column nowrap;
+    display: none;
     
 }
 
@@ -227,4 +237,139 @@ footer p {
 
 .localizacao > p {
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        background-color: var(--color05);
+    }
+    
+    main{
+        width: 80vw;
+        padding: 20px;
+        background-color: white;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    body {
+        background-color: var(--color05);
+    }
+    
+    main{
+        width: 80vw;
+        padding: 20px;
+        background-color: white;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    /* NAV */
+
+    nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        background-color: var(--color04);
+    }
+    nav > .logo{
+        display:block;
+        font-size: 2em;
+        margin: 3px 0px;
+    }
+    /* MENU */
+
+    span#burguer {
+        display: none;
+    }
+    menu {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    menu > ul {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    menu > ul > li > a {
+        font-size: 1.4em;
+        padding: 14px;
+        margin: 5px 5px;
+    }
+
+    /* DROPDOWN MENU*/
+
+    menu > ul > li > ul {
+        display: none;
+        position: absolute;
+
+    }
+
+    menu > ul > li > ul > li > a {
+        font-size: 1.4em;
+
+    }
+
+    /* MENU-DIREITA */
+    .menu-direita > ul {
+        display: flex;
+        flex-flow: row nowrap;
+
+    }
+    
+    .menu-direita > ul > li > a {
+        padding: 10px;
+        margin: 5px 5px;
+        
+    }
+
+    .menu-direita > ul > li > a > i{
+        font-size: 1.3em;
+    }
+
+    .menu-direita > ul > li > ul > li{
+        text-align: center;
+    }
+    
+    /* CORPO */
+
+    body {
+        background-color: var(--color05);
+
+    }
+    main {
+        display: block;
+        width: 70vw;
+        background-color: white;
+        padding: 20px;
+    }
+    
+    /* RODAPÉ */
+    footer {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+    }
+    
+    .redes > ul > li {
+        margin-bottom: 10px;
+    }
+
+    .ajuda a {
+        margin-bottom: 10px;
+    }
+
 }
