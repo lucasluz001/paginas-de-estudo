@@ -9,5 +9,5 @@ Meu primeiro projeto feito com HTML, CSS e Javascript. Feito com o intuito de es
 
 ## Instruções de uso
 Acesse o link para visualizar o site:
-[Acesse o site](https://lucasluz001.github.io/projetos-pessoais/art_in_light/index.html)
+[https://lucasluz001.github.io/paginas-de-estudo/art_in_light/index.html](https://lucasluz001.github.io/paginas-de-estudo/art_in_light/index.html)
 
