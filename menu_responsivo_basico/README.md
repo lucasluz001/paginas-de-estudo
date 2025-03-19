@@ -20,4 +20,4 @@ menuHamburguer.addEventListener('click', () => {
 ```
 ## Instruções de uso
 Acesse o link para visualizar o site:
-[https://lucasluz001.github.io/projetos-pessoais/menu_responsivo_basico/index.html](https://lucasluz001.github.io/paginas-de-estudo/menu_responsivo_basico/index.html)
+[https://lucasluz001.github.io/paginas-de-estudo/menu_responsivo_basico/index.html](https://lucasluz001.github.io/paginas-de-estudo/menu_responsivo_basico/index.html)
