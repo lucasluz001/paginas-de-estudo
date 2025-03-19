@@ -71,6 +71,7 @@ a {
 
 main {
     background: url('../images/cidade.jpg') no-repeat center;
+    background-size: cover;
     height: 92vh;
 }
 
