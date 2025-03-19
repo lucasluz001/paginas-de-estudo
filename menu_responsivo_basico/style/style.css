@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* RESET */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #252140;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    width: 100px;
+}
+
+.logo:hover {
+    letter-spacing: 10px;
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.logo:not(:hover){
+    transition: all 0.3s;
+}
+
+.nav-link {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link li {
+    margin-left: 35px;
+    font-size: 1.2em;
+}
+
+.nav-link li:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.menu-hamburguer div {
+    background-color: white;
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+    transition: 0.3s;
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+main {
+    background: url('../images/cidade.jpg') no-repeat center;
+    height: 92vh;
+}
+
+@media screen and (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .nav-link {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh; 
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #252140;
+        transform: translate(100%);
+        transition: transform 0.3s ease-in;
+        
+    }
+
+    .nav-link li {
+        margin-left: 0px;
+    }
+
+}
