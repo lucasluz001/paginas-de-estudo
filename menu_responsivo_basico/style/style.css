@@ -71,8 +71,8 @@ a {
 
 main {
     background: url('../images/cidade.jpg') no-repeat center;
-    background-size: cover;
     height: 92vh;
+    background-size: cover;
 }
 
 @media screen and (max-width: 999px) {
